@@ -1,0 +1,39 @@
+<svg width="800" height="533" viewBox="0 0 800 533" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky gradient background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4682B4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="533" fill="url(#skyGradient)"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="150" cy="120" rx="40" ry="25" fill="white" opacity="0.8"/>
+  <ellipse cx="180" cy="110" rx="30" ry="20" fill="white" opacity="0.8"/>
+  <ellipse cx="650" cy="80" rx="50" ry="30" fill="white" opacity="0.6"/>
+  <ellipse cx="690" cy="70" rx="35" ry="22" fill="white" opacity="0.6"/>
+  
+  <!-- Bird -->
+  <circle cx="400" cy="200" r="30" fill="#F59E0B"/>
+  <!-- Eye -->
+  <circle cx="410" cy="190" r="8" fill="white"/>
+  <circle cx="410" cy="190" r="4" fill="black"/>
+  <!-- Beak -->
+  <polygon points="430,200 450,190 450,210" fill="#F59E0B"/>
+  
+  <!-- Pipes -->
+  <rect x="600" y="0" width="60" height="150" fill="#10B981"/>
+  <rect x="590" y="130" width="80" height="30" fill="#059669"/>
+  <rect x="600" y="350" width="60" height="183" fill="#10B981"/>
+  <rect x="590" y="320" width="80" height="30" fill="#059669"/>
+  
+  <!-- Title -->
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">Jump Bird</text>
+  <text x="400" y="400" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="white">Farcaster Mini App</text>
+  
+  <!-- Play button hint -->
+  <rect x="320" y="430" width="160" height="50" rx="25" fill="#3B82F6"/>
+  <text x="400" y="460" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">🐦 Play Game</text>
+</svg>

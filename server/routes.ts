@@ -48,6 +48,32 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Farcaster webhook endpoint for Mini App events
+  app.post("/api/webhook", async (req, res) => {
+    try {
+      const { event, data } = req.body;
+      
+      switch (event) {
+        case 'frame_added':
+          console.log('Mini App added by user:', data);
+          break;
+        case 'frame_removed':
+          console.log('Mini App removed by user:', data);
+          break;
+        case 'notification_clicked':
+          console.log('Notification clicked:', data);
+          break;
+        default:
+          console.log('Unknown webhook event:', event, data);
+      }
+      
+      res.status(200).json({ success: true });
+    } catch (error) {
+      console.error("Webhook error:", error);
+      res.status(500).json({ error: "Webhook failed" });
+    }
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }

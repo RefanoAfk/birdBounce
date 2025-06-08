@@ -42,8 +42,10 @@ export class MemStorage implements IStorage {
   async saveScore(insertScore: InsertGameScore): Promise<GameScore> {
     const id = this.currentScoreId++;
     const score: GameScore = {
-      ...insertScore,
       id,
+      userId: insertScore.userId ?? null,
+      score: insertScore.score,
+      level: insertScore.level ?? 1,
       createdAt: new Date(),
     };
     this.scores.set(id, score);

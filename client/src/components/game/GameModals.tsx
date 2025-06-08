@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { GameState } from "@/hooks/useGame";
 import { Play, RotateCcw, Share2 } from "lucide-react";
 
@@ -19,6 +19,8 @@ export default function GameModals({ gameState, onStart, onRestart, onShare }: G
       {/* Start Game Modal */}
       <Dialog open={showStartModal}>
         <DialogContent className="sm:max-w-md mx-4 bg-gradient-to-b from-blue-400 to-blue-500 border-none text-white">
+          <DialogTitle className="sr-only">Start Game</DialogTitle>
+          <DialogDescription className="sr-only">Welcome to Jump Bird game. Tap to make the bird jump and avoid obstacles!</DialogDescription>
           <div className="text-center px-6 py-8">
             <div className="text-6xl mb-4">🐦</div>
             <h2 className="text-3xl font-bold mb-2">Jump Bird</h2>
@@ -43,6 +45,8 @@ export default function GameModals({ gameState, onStart, onRestart, onShare }: G
       {/* Game Over Modal */}
       <Dialog open={showGameOverModal}>
         <DialogContent className="sm:max-w-xs mx-4">
+          <DialogTitle className="sr-only">Game Over</DialogTitle>
+          <DialogDescription className="sr-only">Game finished. Your final score and options to play again or share.</DialogDescription>
           <div className="text-center p-6">
             <div className="text-6xl mb-2">💔</div>
             <h2 className="text-2xl font-bold game-dark mb-2">Game Over!</h2>
