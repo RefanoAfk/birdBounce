@@ -1,0 +1,18 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjEsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIn0",
+    "payload": "eyJkb21haW4iOiJqdW1wYmlyZC5hcHAifQ",
+    "signature": "MHgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA"
+  },
+  "frame": {
+    "version": "1",
+    "name": "Jump Bird",
+    "iconUrl": "https://jumpbird.app/logo.png",
+    "homeUrl": "https://jumpbird.app/",
+    "imageUrl": "https://jumpbird.app/og-image.png",
+    "buttonTitle": "🐦 Play Game",
+    "splashImageUrl": "https://jumpbird.app/splash.png",
+    "splashBackgroundColor": "#3B82F6",
+    "webhookUrl": "https://jumpbird.app/api/webhook"
+  }
+}
